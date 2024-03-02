@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #000; /* Set background color to black */
+            color: #fff; /* Set text color to white */
+            text-align: center;
+        }
+        #pageTitle {
+            font-size: 3em;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background for better visibility */
+        }
+        #buttonContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            position: relative;
+        }
+        .actionButton {
+            margin: 0 10px;
+            padding: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        #goBackButton {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="pageTitle">GAMES</div>
+    <div id="buttonContainer">
+        <button class="actionButton" onclick="redirectToGame1()">1v1.lol</button>
+        <button class="actionButton" onclick="redirectToGame2()">Territorial.io</button>
+        <button class="actionButton" onclick="redirectToGame3()">snow rider</button>
+        <button id="goBackButton" onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        function redirectToGame1() {
+            // Redirect to the website for Game 1
+            window.location.href = 'https://rpc.lol/games/projects/1v1lol/index.html';
+        }
+
+        function redirectToGame2() {
+            // Redirect to the website for Game 2
+            window.location.href = 'https://territorial-io.github.io/home/';
+        }
+
+        function redirectToGame3() {
+            // Redirect to the website for Game 3
+            window.location.href = 'https://imgreys.github.io/SnowRider-3D/';
+        }
+
+        function goBack() {
+            // Redirect to a new site when "Go Back" is clicked
+            window.location.href = 'https://greys6969.github.io/greys-unblocker/';
+        }
+    </script>
+</body>
+</html>
